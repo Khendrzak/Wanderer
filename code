@@ -42,6 +42,16 @@ void draw(){
 }
 
 void keyPressed(){
- accx=random(-.1,.1);
- accy=random(-.1,.1);
+  if(key=='w'){
+    accy+=-.1;
+  }
+  if(key=='s'){
+    accy+=.1;
+  }
+  if(key=='a'){
+    accx+=-.1;
+  }
+  if(key=='d'){
+    accx+=.1;
+  }
 }
